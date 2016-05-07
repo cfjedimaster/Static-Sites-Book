@@ -1,0 +1,7 @@
+html
+	head
+		title #{title}
+	body
+		!= yield
+		hr
+		p Copyright #{new Date().getFullYear()}
