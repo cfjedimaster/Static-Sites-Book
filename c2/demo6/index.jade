@@ -1,0 +1,10 @@
+h1 Welcome to our store
+
+ul
+	for product, link in public.products._data
+		li 
+			a(href='/products/#{link}.html') #{product.title} ($#{product.price})
+
+p This site was made by #{owner}.
+
+
