@@ -5,11 +5,14 @@
 <div id="featured">
 	<span class="whatshot"><a href="menu.html">Find out more</a></span>
 	<div>
-		<a href="menu.html"><img src="images/coffee1.jpg" alt="Image"></a>
-		<a href="menu.html"><img src="images/coffee2.jpg" alt="Image"></a>
-		<a href="menu.html"><img src="images/coffee3.jpg" alt="Image"></a>
+		<% 
+			coffeeKeys = Object.keys(public.coffees._data);
+			for(var x = 0; x<Math.min(coffeeKeys.length,3);x++) { 
+				coffee = public.coffees._data[coffeeKeys[x]];
+		%>
+				<a href="/coffees/<%- idx %>.html">
+				<img src="images/<%- coffee.image %>" 
+				alt="<%- coffee.name %>"></a>	
+		<% } %>
 	</div>
 </div>
-
-
-

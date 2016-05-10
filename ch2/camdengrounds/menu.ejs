@@ -8,12 +8,15 @@
 		<ul>
 		<% for(idx in public.coffees._data) { %>
 			<li>
-				<a href="/coffees/<%- idx %>.html"><img src="images/<%- public.coffees._data[idx].image %>" 
+				<a href="/coffees/<%- idx %>.html">
+				<img src="images/<%- public.coffees._data[idx].image %>" 
 				alt="<%- public.coffees._data[idx].name %>"></a>
 				<div>
-					<a href="/coffees/<%- idx %>.html"><%- public.coffees._data[idx].name %></a>
+					<a href="/coffees/<%- idx %>.html">
+					<%- public.coffees._data[idx].name %></a>
 					<p>
-						<%- public.coffees._data[idx].short %> &#36;<%- public.coffees._data[idx].price %>
+						<%- public.coffees._data[idx].short %> 
+						&#36;<%- public.coffees._data[idx].price %>
 					</p>
 				</div>
 			</li>
