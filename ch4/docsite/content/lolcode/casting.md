@@ -3,6 +3,7 @@ date = "2016-05-05T08:46:10-04:00"
 draft = true
 title = "Casting"
 categories = ["Operators"]
+categories_weight = 6
 +++
 
 Operators that work on specific types implicitly cast parameter values of other types. If the value cannot be safely cast, then it results in an error.

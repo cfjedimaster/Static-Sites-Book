@@ -3,6 +3,7 @@ date = "2016-05-05T08:39:55-04:00"
 draft = true
 title = "Naming"
 categories = ["Variables"]
+categories_weight = 2
 +++
 
 _(from 1.1)_

@@ -3,6 +3,7 @@ date = "2016-05-05T08:39:55-04:00"
 draft = true
 title = "Declaration and Assignment"
 categories = ["Variables"]
+categories_weight = 3
 +++
 
 _(modified from 1.1)_

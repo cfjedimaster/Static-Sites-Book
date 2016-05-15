@@ -2,9 +2,8 @@
 date = "2016-05-04T17:35:01-04:00"
 draft = true
 title = "Whitespace"
-categories = [
-    "formatting"
-]
+categories = ["formatting"]
+categories_weight = 1
 +++
 
 *   Spaces are used to demarcate tokens in the language, although some keyword constructs may include spaces.

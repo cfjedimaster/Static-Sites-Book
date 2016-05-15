@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var AFFIX_TOP_LIMIT = 300;
+    var AFFIX_TOP_LIMIT = 250;
     var AFFIX_OFFSET = 49;
 
     var $menu = $("#menu"),

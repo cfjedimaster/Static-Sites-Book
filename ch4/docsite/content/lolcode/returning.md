@@ -3,6 +3,7 @@ date = "2016-05-05T08:57:54-04:00"
 draft = true
 title = "Returning"
 categories = ["Functions"]
+categories_weight = 2
 +++
 
 Return from the function is accomplished in one of the following ways:

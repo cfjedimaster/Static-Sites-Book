@@ -3,6 +3,7 @@ date = "2016-05-05T08:57:54-04:00"
 draft = true
 title = "Calling"
 categories = ["Functions"]
+categories_weight = 3
 +++
 
 A function of given arity is called with:

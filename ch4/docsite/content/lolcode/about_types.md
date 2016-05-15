@@ -3,6 +3,7 @@ date = "2016-05-05T08:41:21-04:00"
 draft = true
 title = ""
 categories = ["Types"]
+categories_weight = 1
 +++
 
 _(updated from 1.1)_

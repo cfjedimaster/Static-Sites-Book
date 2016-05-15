@@ -3,6 +3,7 @@ date = "2016-05-05T08:41:21-04:00"
 draft = true
 title = "Strings"
 categories = ["Types"]
+categories_weight = 5
 +++
 
 String literals (YARN) are demarked with double quotation marks ("). Line continuation and soft-command-breaks are ignored inside quoted strings. An unterminated string literal (no closing quote) will cause an error.

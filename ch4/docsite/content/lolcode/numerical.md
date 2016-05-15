@@ -3,6 +3,7 @@ date = "2016-05-05T08:41:21-04:00"
 draft = true
 title = "Numerical Types"
 categories = ["Types"]
+categories_weight = 4
 +++
 
 A NUMBR is an integer as specified in the host implementation/architecture. Any contiguous sequence of digits outside of a quoted YARN and not containing a decimal point (.) is considered a NUMBR. A NUMBR may have a leading hyphen (-) to signify a negative number.

@@ -3,6 +3,7 @@ date = "2016-05-05T08:57:54-04:00"
 draft = true
 title = "Definition"
 categories = ["Functions"]
+categories_weight = 1
 +++
 
 A function is demarked with the opening keyword `HOW IZ I` and the closing keyword `IF U SAY SO`. The syntax is as follows:

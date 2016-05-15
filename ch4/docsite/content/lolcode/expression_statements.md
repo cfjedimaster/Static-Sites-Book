@@ -3,6 +3,7 @@ date = "2016-05-05T08:50:24-04:00"
 draft = true
 title = "Expression Statements"
 categories = ["Statements"]
+categories_weight = 1
 +++
 
 ### Expression Statements
