@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+<body>
+<div class="wrapper">
+<nav>
+ 
+  	<div class="pull-left">
+    	<h1><a href="javascript:"><img src="{{ .Site.BaseURL }}assets/img/icon.png" alt="Free Documentation Template Icon" /> <span>DocWeb</span></a></h1>
+    </div>
+    
+    <div class="pull-right">
+    	<a href="http://frittt.com/free-documentation-html-template-docweb" target="_blank" class="btn btn-download"><img src="{{ .Site.BaseURL }}assets/img/download.png" width="25" alt="Download Free Documentation Template" /> Download Now</a>
+    </div>
+
+</nav>
+<header>
+  <div class="container">
+    <h2 class="lone-header">{{ .Site.Title }}</h2>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav">
+      <li><strong>Getting Started</strong></li>
+      {{ range .Site.Pages }}
+      <li><a href="#{{ .LinkTitle | urlize }}" class="cc-active">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+    <div class="docs-content">
+        {{ range .Site.Pages }}
+            <h2 id="{{ .LinkTitle | urlize }}">{{ .Title }}</h2>
+            {{ .Content }}
+            <hr>
+        {{ end }}
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="">
+    <h4> This documentation template is provided by <a href="http://www.frittt.com" target="_blank">Frittt Templates</a>. You can download and use this template for free. If you have used this template, please pay the developer's effort by Tweeting, sharing on Facebook, social mention or with a linkback. Enjoy! :)</h4>
+  </div>
+</section>
+<footer>
+  <div class="">
+    <p> &copy; Copyright Frittt Templates. All Rights Reserved.</p>
+  </div>
+</footer>
+</div>
+<script src="{{ .Site.BaseURL }}assets/js/jquery.min.js"></script> 
+<script type="text/javascript" src="{{ .Site.BaseURL }}assets/js/prettify/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script src="{{ .Site.BaseURL }}assets/js/layout.js"></script>
+</body>
+</html>

@@ -6,11 +6,13 @@ using this layout (free) http://www.gugggly.com/free-documentation-html-template
 
 - prebuilt docs layout for hugo available at https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/
 
-Let’s document LOLCODE https://github.com/justinmeza/lolcode-spec/blob/master/v1.2/lolcode-spec-v1.2.md (esoteric language)
+Let’s document LOLCODE http://lolcode.org/ https://github.com/justinmeza/lolcode-spec/blob/master/v1.2/lolcode-spec-v1.2.md (esoteric language)
 
 cd docsite
 
 new post
 
 hugo new lolcode/formatting.md
+
+create themes folder & install theme (I chose http://themes.gohugo.io/bootie-docs/)
 
