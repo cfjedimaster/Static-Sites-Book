@@ -1,11 +1,9 @@
 +++
 date = "2016-05-05T08:48:38-04:00"
 draft = true
-title = "Input/Output"
-
+title = "Terminal-Based"
+categories = ["Input/Output"]
 +++
-
-### Terminal-Based
 
 The print (to STDOUT or the terminal) operator is `VISIBLE`. It has infinite arity and implicitly concatenates all of its arguments after casting them to YARNs. It is terminated by the statement delimiter (line end or comma). The output is automatically terminated with a carriage return (:)), unless the final token is terminated with an exclamation point (!), in which case the carriage return is suppressed.
 

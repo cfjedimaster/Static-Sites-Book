@@ -23,9 +23,13 @@
 <section>
   <div class="container">
     <ul class="docs-nav">
-      <li><strong>Getting Started</strong></li>
-      {{ range .Site.Pages }}
-      <li><a href="#{{ .LinkTitle | urlize }}" class="cc-active">{{ .Title }}</a></li>
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <li><strong>{{ $name | title }}</strong></li>
+        {{ range $taxonomy.Pages }}
+          {{ if ne .Title "" }}
+            <li><a href="#{{ .LinkTitle | urlize }}" class="cc-active">{{ .Title }}</a></li>
+          {{ end }}
+        {{ end }}
       {{ end }}
     </ul>
     <div class="docs-content">

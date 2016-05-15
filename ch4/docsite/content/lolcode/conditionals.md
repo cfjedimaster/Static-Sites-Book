@@ -1,11 +1,9 @@
 +++
 date = "2016-05-05T08:55:44-04:00"
 draft = true
-title = "Flow Control"
-
+title = "Conditionals"
+categories = ["Flow Control"]
 +++
-
-### Conditionals
 
 #### If-Then
 
