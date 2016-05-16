@@ -201,8 +201,9 @@ footer p {
 
 /* Navigation Styles */
 nav {
-    background: #fff;
-    padding: 0;
+    background: #26abe2;
+    color: #fff;
+    padding: 0.3em 0 0 0;
     min-height: 60px;
 	border-radius: 5px 5px 0 0;
 }
@@ -296,15 +297,6 @@ nav #menu-toggle {
     }
 }
 
-
-
-
-
-
-
-
-
-
 /* Content Styles */
 section { padding: 1em 0 3em; text-align: center; }
 section.vibrant { background: #222; color: #fff; }
@@ -348,12 +340,6 @@ input {
     -o-transition: all linear 0.2s;
     transition: all linear 0.2s;
 }
-
-
-
-
-
-
 
 input:focus {
     border-color: #007eb2;

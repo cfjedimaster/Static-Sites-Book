@@ -1,6 +1,9 @@
 $(document).ready(function () {
-    var AFFIX_TOP_LIMIT = 250;
-    var AFFIX_OFFSET = 49;
+    var AFFIX_TOP_LIMIT = 130,
+        AFFIX_OFFSET = 49,
+        aOffset = AFFIX_OFFSET
+        lastScroll = 0,
+        scrollDirection = "down";
 
     var $menu = $("#menu"),
 		$btn = $("#menu-toggle");
@@ -36,7 +39,7 @@ $(document).ready(function () {
                     if ($anchor.length > 0) {
                         var offset = $anchor.offset();
 
-                        if (top < offset.top - AFFIX_OFFSET) {
+                        if (top < offset.top - aOffset) {
                             return last;
                         }
 
@@ -51,10 +54,28 @@ $(document).ready(function () {
         $(window).on("scroll", function (evt) {
             var top = window.scrollY,
 		    	height = $affixNav.outerHeight(),
-		    	max_bottom = $container.offset().top + $container.outerHeight(),
-		    	bottom = top + height + AFFIX_OFFSET;
+		    	bottom = top + height + aOffset,
+                max_bottom = $container.offset().top + $container.outerHeight(),
+                $current = getClosestHeader(top),
+                thisScroll = $(this).scrollTop();
+            if (thisScroll > lastScroll) {
+                scrollDirection = "down";
+            }
+            else {
+                scrollDirection = "up";
+            }
+            lastScroll = thisScroll;
 
             if (affixNavfixed) {
+                if (($current.position().top > window.innerHeight - 100) && (scrollDirection == "down")) {
+                    aOffset = aOffset - 2;
+                }
+                else if (aOffset < AFFIX_OFFSET) {
+                    aOffset += 2;
+                }
+                else {
+                    aOffset = AFFIX_OFFSET;
+                }
                 if (top <= AFFIX_TOP_LIMIT) {
                     $affixNav.removeClass("fixed");
                     $affixNav.css("top", 0);
@@ -62,14 +83,12 @@ $(document).ready(function () {
                 } else if (bottom > max_bottom) {
                     $affixNav.css("top", (max_bottom - height) - top);
                 } else {
-                    $affixNav.css("top", AFFIX_OFFSET);
+                    $affixNav.css("top", aOffset);
                 }
             } else if (top > AFFIX_TOP_LIMIT) {
                 $affixNav.addClass("fixed");
                 affixNavfixed = true;
             }
-
-            var $current = getClosestHeader(top);
 
             if (current !== $current) {
                 $affixNav.find(".active").removeClass("active");
@@ -78,6 +97,4 @@ $(document).ready(function () {
             }
         });
     });
-
-    prettyPrint();
 });

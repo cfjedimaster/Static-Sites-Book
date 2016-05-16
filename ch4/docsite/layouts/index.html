@@ -5,21 +5,15 @@
 <body>
 <div class="wrapper">
 <nav>
- 
   	<div class="pull-left">
-    	<h1><a name="top"><img src="{{ .Site.BaseURL }}assets/img/icon.png" alt="Free Documentation Template Icon" /> <span>DocWeb</span></a></h1>
+      <div class="container">
+        <h2 class="lone-header">{{ .Site.Title }}</h2>
+      </div>
     </div>
     
     <div class="pull-right">
-    	<a href="http://frittt.com/free-documentation-html-template-docweb" target="_blank" class="btn btn-download"><img src="{{ .Site.BaseURL }}assets/img/download.png" width="25" alt="Download Free Documentation Template" /> Download Now</a>
     </div>
-
 </nav>
-<header>
-  <div class="container">
-    <h2 class="lone-header">{{ .Site.Title }}</h2>
-  </div>
-</header>
 <section>
   <div class="container">
     <ul class="docs-nav">
@@ -55,9 +49,7 @@
   </div>
 </footer>
 </div>
-<script src="{{ .Site.BaseURL }}assets/js/jquery.min.js"></script> 
-<script type="text/javascript" src="{{ .Site.BaseURL }}assets/js/prettify/prettify.js"></script> 
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script src="{{ .Site.BaseURL }}assets/js/jquery.min.js"></script>
 <script src="{{ .Site.BaseURL }}assets/js/layout.js"></script>
 </body>
 </html>
