@@ -8,7 +8,7 @@ categories_weight = 3
 
 Boolean operators working on TROOFs are as follows:
 
-```
+``` ruby
 BOTH OF <x> [AN] <y>          BTW and: WIN iff x=WIN, y=WIN
 EITHER OF <x> [AN] <y>        BTW or: FAIL iff x=FAIL, y=FAIL
 WON OF <x> [AN] <y>           BTW xor: FAIL if x=y

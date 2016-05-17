@@ -15,7 +15,7 @@ _Immature spec – *_subject to change*_:_
 
 Iteration loops have the form:
 
-```
+``` html
 IM IN YR <label> <operation> YR <variable> [TIL|WILE <expression>]
   <code block>
 IM OUTTA YR <label>

@@ -12,7 +12,7 @@ The traditional if/then construct is a very simple construct operating on the im
 
 `O RLY?` branches to the block begun with `YA RLY` if `IT` can be cast to WIN, and branches to the `NO WAI` block if `IT` is FAIL. The code block introduced with `YA RLY` is implicitly closed when `NO WAI` is reached. The `NO WAI` block is closed with `OIC`. The general form is then as follows:
 
-```
+``` ruby
 <expression>
 O RLY?
   YA RLY
@@ -24,7 +24,7 @@ OIC
 
 while an example showing the ability to put multiple statements on a line separated by a comma would be:
 
-```
+``` ruby
 BOTH SAEM ANIMAL AN "CAT", O RLY?
   YA RLY, VISIBLE "J00 HAV A CAT"
   NO WAI, VISIBLE "J00 SUX"
@@ -33,7 +33,7 @@ OIC
 
 The elseif construction adds a little bit of complexity. Optional `MEBBE <expression>` blocks may appear between the YA RLY and NO WAI blocks. If the `<expression>` following `MEBBE` is WIN, then that block is performed; if not, the block is skipped until the following `MEBBE`, `NO WAI`, or `OIC`. The full expression syntax is then as follows:
 
-```
+``` ruby
 <expression>
 O RLY?
   YA RLY
@@ -50,7 +50,7 @@ OIC
 
 An example of this conditional is then:
 
-```
+``` ruby
 BOTH SAEM ANIMAL AN "CAT"
 O RLY?
   YA RLY, VISIBLE "J00 HAV A CAT"
@@ -65,7 +65,7 @@ _(modified from 1.1)_
 
 The LOLCODE keyword for switches is `WTF?`. The `WTF?` operates on `IT` as being the expression value for comparison. A comparison block is opened by `OMG` and must be a literal, not an expression. (A literal, in this case, excludes any YARN containing variable interpolation (`:{var}`).) Each literal must be unique. The `OMG` block can be followed by any number of statements and may be terminated by a `GTFO`, which breaks to the end of the the `WTF` statement. If an `OMG` block is not terminated by a `GTFO`, then the next `OMG` block is executed as is the next until a `GTFO` or the end of the `WTF` block is reached. The optional default case, if none of the literals evaluate as true, is signified by `OMGWTF`.
 
-```
+``` ruby
 WTF?
   OMG <value literal>
     <code block>
@@ -76,7 +76,7 @@ WTF?
 OIC
 ```
 
-```
+``` ruby
 COLOR, WTF?
   OMG "R"
     VISIBLE "RED FISH"
@@ -97,32 +97,32 @@ In this example, the output results of evaluating the variable `COLOR` would be:
 "R":
 
 
-```
+``` ruby
 RED FISH
 ```
 
 "Y":
 
-```
+``` ruby
 YELLOW FISH
 FISH HAS A FLAVOR
 ```
 
 "G":
 
-```
+``` ruby
 FISH HAS A FLAVOR
 ```
 
 "B":
 
-```
+``` ruby
 FISH HAS A FLAVOR
 ```
 
 none of the above:
 
-```
+``` ruby
 FISH IS TRANSPARENT
 ```
 
@@ -136,7 +136,7 @@ _Immature spec – *_subject to change*_:_
 
 Iteration loops have the form:
 
-```
+``` html
 IM IN YR <label> <operation> YR <variable> [TIL|WILE <expression>]
   <code block>
 IM OUTTA YR <label>

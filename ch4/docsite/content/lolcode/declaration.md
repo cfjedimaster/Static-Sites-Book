@@ -12,7 +12,7 @@ To declare a variable, the keyword is `I HAS A` followed by the variable name. T
 
 Assignment of a variable is accomplished with an assignment statement, `<variable> R <expression>`
 
-```
+``` ruby
 I HAS A VAR            BTW VAR is null and untyped
 VAR R "THREE"          BTW VAR is now a YARN and equals "THREE"
 VAR R 3                BTW VAR is now a NUMBR and equals 3

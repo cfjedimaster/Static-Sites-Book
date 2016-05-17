@@ -10,7 +10,7 @@ categories_weight = 2
 
 The basic math operators are binary prefix operators.
 
-```
+``` ruby
 SUM OF <x> AN <y>       BTW +
 DIFF OF <x> AN <y>      BTW -
 PRODUKT OF <x> AN <y>   BTW *

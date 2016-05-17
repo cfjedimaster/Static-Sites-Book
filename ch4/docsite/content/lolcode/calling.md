@@ -8,7 +8,7 @@ categories_weight = 3
 
 A function of given arity is called with:
 
-```
+``` html
 I IZ <function name> [YR <expression1> [AN YR <expression2> [AN YR <expression3> ...]]] MKAY
 ```
 

@@ -8,7 +8,7 @@ categories_weight = 2
 
 Assignment statements have no side effects with `IT`. They are generally of the form:
 
-```
+``` html
 <variable> <assignment operator> <expression>
 ```
 

@@ -12,15 +12,15 @@ Single line comments are begun by `BTW`, and may occur either after a line of co
 
 All of these are valid single line comments:
 
-```
+``` ruby
 I HAS A VAR ITZ 12          BTW VAR = 12
 ```
 
-```
+``` ruby
 I HAS A VAR ITZ 12,         BTW VAR = 12
 ```
 
-```
+``` ruby
 I HAS A VAR ITZ 12
                 BTW VAR = 12
 ```
@@ -29,7 +29,7 @@ Multi-line comments are begun by `OBTW` and ended with `TLDR`, and should be sta
 
 These are valid multi-line comments:
 
-```
+``` ruby
 I HAS A VAR ITZ 12
             OBTW this is a long comment block
                  see, i have more comments here
@@ -38,7 +38,7 @@ I HAS A VAR ITZ 12
 I HAS A FISH ITZ BOB
 ```
 
-```
+``` ruby
 I HAS A VAR ITZ 12,  OBTW this is a long comment block
       see, i have more comments here
       and here

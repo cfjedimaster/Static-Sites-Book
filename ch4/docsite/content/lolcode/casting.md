@@ -10,7 +10,7 @@ Operators that work on specific types implicitly cast parameter values of other 
 
 An expression's value may be explicitly cast with the binary `MAEK` operator.
 
-```
+``` html
 MAEK <expression> [A] <type>
 ```
 
@@ -18,7 +18,7 @@ Where `<type>` is one of TROOF, YARN, NUMBR, NUMBAR, or NOOB. This is only for l
 
 To explicitly re-cast a variable, you may create a normal assignment statement with the `MAEK` operator, or use a casting assignment statement as follows:
 
-```
+``` html
 <variable> IS NOW A <type>         BTW equivalent to
 <variable> R MAEK <variable> [A] <type>
 ```

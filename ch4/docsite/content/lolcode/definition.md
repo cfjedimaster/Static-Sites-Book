@@ -8,7 +8,7 @@ categories_weight = 1
 
 A function is demarked with the opening keyword `HOW IZ I` and the closing keyword `IF U SAY SO`. The syntax is as follows:
 
-```
+``` html
 HOW IZ I <function name> [YR <argument1> [AN YR <argument2> …]]
   <code block>
 IF U SAY SO

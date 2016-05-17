@@ -10,18 +10,18 @@ Mathematical operators and functions in general rely on prefix notation. By doin
 
 Calling unary operators then has the following syntax:
 
-```
+``` html
 <operator> <expression1>
 ```
 
 The `AN` keyword can optionally be used to separate arguments, so a binary operator expression has the following syntax:
 
-```
+``` html
 <operator> <expression1> [AN] <expression2>
 ```
 
 An expression containing an operator with infinite arity can then be expressed with the following syntax:
 
-```
+``` html
 <operator> <expr1> [[[AN] <expr2>] [AN] <expr3> ...] MKAY
 ```
