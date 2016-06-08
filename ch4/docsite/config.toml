@@ -2,5 +2,5 @@ baseurl = "http://localhost:1313"
 languageCode = "en-us"
 title = "LOLCODE Documentation"
 pygmentsStyle = "colorful"
-pygmentsuseclasses = false
-PygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsCodeFences = true
