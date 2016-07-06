@@ -1,0 +1,11 @@
+---
+layout: page
+title: The Board of Cats
+---
+
+<ul>
+{% for cat in site.data.cats  %}
+	<li>{{cat.name}}</li>
+{% endfor %}
+</ul>
+

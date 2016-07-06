@@ -1,0 +1,13 @@
+---
+layout: page
+title: Cats with Pictures
+---
+
+{% for cat in site.data.cats  %}
+	<p>
+	<img src="{{cat.picture}}"><br/>
+	{{cat.name}} is a {{cat.gender}} cat and is {{cat.age}} years old.
+	</p>
+{% endfor %}
+
+

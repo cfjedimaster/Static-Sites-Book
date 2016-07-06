@@ -1,0 +1,32 @@
+[
+		{
+			"name":"Elvis",
+			"age":4,
+			"gender":"male",
+			"picture":"http://placekitten.com/200/300"
+		},
+		{
+			"name":"Sinatra",
+			"age":8,
+			"gender":"male",
+			"picture":"http://placekitten.com/400/330"
+		},
+		{
+			"name":"Lilith",
+			"age":5,
+			"gender":"female",
+			"picture":"http://placekitten.com/300/300"
+		},
+		{
+			"name":"Pig",
+			"age":2,
+			"gender":"female",
+			"picture":"http://placekitten.com/500/400"
+		},
+		{
+			"name":"Robin",
+			"age":7,
+			"gender":"male",
+			"picture":"http://placekitten.com/333/333"
+		},
+]
