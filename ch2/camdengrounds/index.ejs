@@ -10,7 +10,7 @@
 			for(var x = 0; x<Math.min(coffeeKeys.length,3);x++) { 
 				coffee = public.coffees._data[coffeeKeys[x]];
 		%>
-				<a href="/coffees/<%- idx %>.html">
+				<a href="/coffees/<%- coffeeKeys[x] %>.html">
 				<img src="images/<%- coffee.image %>" 
 				alt="<%- coffee.name %>"></a>	
 		<% } %>
