@@ -1,0 +1,27 @@
+<div id="figure">
+	<img src="images/headline-menu.jpg" alt="Image">
+	<span>Lorem ipsum dolor sit amet.</span>
+</div>
+<div>
+	<a href="menu.html" class="whatshot">What&#39;s Hot</a>
+	<div>
+		<ul>
+		<% for(idx in public.coffees._data) { %>
+			<li>
+				<a href="/coffees/<%- idx %>.html">
+				<img src="images/<%- public.coffees._data[idx].image %>" 
+				alt="<%- public.coffees._data[idx].name %>"></a>
+				<div>
+					<a href="/coffees/<%- idx %>.html">
+					<%- public.coffees._data[idx].name %></a>
+					<p>
+						<%- public.coffees._data[idx].short %> 
+						&#36;<%- public.coffees._data[idx].price %>
+					</p>
+				</div>
+			</li>
+
+		<% } %>
+		</ul>
+	</div>
+</div>

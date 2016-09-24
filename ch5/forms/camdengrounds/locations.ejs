@@ -1,0 +1,19 @@
+<div id="figure">
+	<img src="images/headline-locations.jpg" alt="Image">
+</div>
+<div>
+	<a href="locations.html" class="locations">Locations</a>
+	<div>
+		<% for(idx in locations) { %>
+		<dl>
+			<dt><%- locations[idx].name %></dt>
+			<dd><%- locations[idx].address %></dd>
+			<dd><%- locations[idx].phone %></dd>
+			<dd><%- locations[idx].hours %></dd>
+			<dd>
+				<img src="https://maps.googleapis.com/maps/api/staticmap?center=<%- locations[idx].address %>&size=250x250&zoom=15&markers=color:red%7Clabel:S%7C<%- locations[idx].address %>&key=AIzaSyB3eiEtldYqoxbVyN5wq_-PqvV7xrDuUQA">
+			</dd>
+		</dl>
+		<% } %>
+	</div>
+</div>

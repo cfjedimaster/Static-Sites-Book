@@ -1,0 +1,18 @@
+<div id="figure">
+	<img src="images/headline-home.jpg" alt="Image">
+	<span id="home">Camden Grounds is the best darn coffee in the world! <a href="about.html">Find out why.</a></span>
+</div>
+<div id="featured">
+	<span class="whatshot"><a href="menu.html">Find out more</a></span>
+	<div>
+		<% 
+			coffeeKeys = Object.keys(public.coffees._data);
+			for(var x = 0; x<Math.min(coffeeKeys.length,3);x++) { 
+				coffee = public.coffees._data[coffeeKeys[x]];
+		%>
+				<a href="/coffees/<%- coffeeKeys[x] %>.html">
+				<img src="images/<%- coffee.image %>" 
+				alt="<%- coffee.name %>"></a>	
+		<% } %>
+	</div>
+</div>

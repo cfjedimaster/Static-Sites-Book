@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Camden Grounds</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <div id="page">
+    <div>
+      <div id="header">
+        <a href="/index.html">
+        <img src="/images/logo.png" alt="Image">
+        </a>
+        <ul>
+          <li 
+            <% if(current.source == 'index') { %>
+            class="current"
+            <% } %>
+            >
+
+            <a href="/index.html">Home</a>
+          </li>
+          <li
+            <% if(current.source == 'menu') { %>
+            class="current"
+            <% } %>
+            >
+            <a href="/menu.html">Menu</a>
+          </li>
+          <li
+            <% if(current.source == 'locations') { %>
+            class="current"
+            <% } %>
+            >
+            <a href="/locations.html">Locations</a>
+          </li>
+          <li
+            <% if(current.source == 'contact') { %>
+            class="current"
+            <% } %>
+            >
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li
+            <% if(current.source == 'about') { %>
+            class="current"
+            <% } %>
+            >
+            <a href="/about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div id="body">
+      <%- yield %>
+      </div>
+      <div id="footer">
+        <div>
+          <a href="/index.html">
+          <img src="/images/logo2.png" alt="Image">
+          </a>
+          <p class="footnote">
+            &copy; Camden Grounds.<br>All Rights Reserved.
+          </p>
+        </div>
+        <div class="section">
+          <ul>
+            <li 
+            <% if(current.source == 'index') { %>
+            class="current"
+            <% } %>
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+            <% if(current.source == 'menu') { %>
+            class="current"
+            <% } %>
+            >
+              <a href="menu.html">Menu</a>
+            </li>
+            <li
+            <% if(current.source == 'locations') { %>
+            class="current"
+            <% } %>
+            >
+              <a href="locations.html">Locations</a>
+            </li>
+            <li
+            <% if(current.source == 'contact') { %>
+            class="current"
+            <% } %>
+            >
+
+              <a href="contact.html">Contact</a>
+            </li>
+            <li
+            <% if(current.source == 'about') { %>
+            class="current"
+            <% } %>
+            >
+
+              <a href="about.html">About Us</a>
+            </li>
+          </ul>
+          <div id="connect">
+          <a href="http://freewebsitetemplates.com/go/facebook/" 
+          target="_blank" id="facebook">Facebook</a>
+          <a href="http://freewebsitetemplates.com/go/twitter/" 
+          target="_blank" id="twitter">Twitter</a>
+          <a href="http://freewebsitetemplates.com/go/googleplus/" 
+          target="_blank" id="googleplus">Google+</a>
+          <a href="index.html" id="rss">RSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
