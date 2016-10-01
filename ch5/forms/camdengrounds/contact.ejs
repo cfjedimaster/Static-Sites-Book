@@ -8,7 +8,15 @@
 
 	<form action="https://formspree.io/raymondcamden@gmail.com" method="post">
 		
-		<input type="hidden" name="_next" value="http://localhost:3333/thanks.html" />
+		<% if(environment == "production") { %>
+		<!-- 
+			NOTE THIS IS NOT A REAL URL!
+			Obviously someone may buy the domain and put something naughty. 
+		-->
+		<input type="hidden" name="_next" value="http://www.camdengrounds.com/thanks.html" />
+		<% } else { %>
+		<input type="hidden" name="_next" value="http://localhost:9000/thanks.html" />
+		<% } %>
 
 		<p>
 		<label for="name">Name: </label>

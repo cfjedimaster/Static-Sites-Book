@@ -673,3 +673,7 @@ p a:hover {
 #page div div#footer div.section div#connect a#rss:hover {
 	background: url(../images/icons.png) no-repeat -18px -84px;
 }
+
+div.contactForm {
+	margin-left: 50px;
+}
